@@ -159,6 +159,16 @@ body {
   font-size: 56px;
   line-height: 1.07;
 }
+.hero-image{
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:  linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url("../images/people-office.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* --------------------------Button */
 .btn {
   display: inline-block;
@@ -194,6 +204,30 @@ body {
 }
 .text-item {
   width: 264px;
+}
+.text-item::before{
+  content:"";
+  margin-bottom: 8px;
+  display: block;
+  height: 112px;
+  outline: 2px solid red;
+  background: #F4F4FD;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon-strategy::before{
+  background-image: url();
+}
+.icon-punctuality::before{
+  background-image: url();
+}
+.icon-diligence::before{
+  background-image: url();
+}
+.icon-technologies::before{
+  background-image: url();
 }
 .text-description {
   line-height: 1.5;
@@ -240,6 +274,9 @@ body {
   margin-bottom: 32px;
 }
 /* ----------------------------Footer */
+.text-item-footer{
+  width: 264px;
+}
 .footer-page {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -256,7 +293,7 @@ body {
 .filter .btn {
   background-color: var(--light-bcg-color);
   color: var(--active-btn-color);
-
+px
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }

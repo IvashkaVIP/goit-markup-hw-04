@@ -305,7 +305,24 @@ body {
  .team-soc-icon{
   fill: var(--soc-icon-color);
 }
-/* ----------------------------Footer */
+/*-----------------------------Customers  */
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+  width: calc((100% - 5*24px) / 6);
+  height: 88px;
+}
+.customers-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+
+}
+/* ----------------------------Footer     */
 .text-item-footer{
   width: 264px;
 }

@@ -9,6 +9,8 @@
   --footer-color-text: #e7e9fc;
   --dark-bcg-color: #2e2f42;
   --light-bcg-color: #f4f4fd;
+  --soc-icon-color: #f4f4fd;
+
 }
 h1,
 h2,
@@ -210,7 +212,6 @@ body {
   margin-bottom: 8px;
   display: block;
   height: 112px;
-  outline: 2px solid red;
   background: #F4F4FD;
   border-radius: 4px;
   background-position: center;
@@ -218,16 +219,20 @@ body {
   background-size: contain;
 }
 .icon-strategy::before{
-  background-image: url();
+  background-image: url(../images/antenna.svg);
+  background-size: 64px;
 }
 .icon-punctuality::before{
-  background-image: url();
+  background-image: url(../images/clock.svg);
+  background-size: 64px;
 }
 .icon-diligence::before{
-  background-image: url();
+  background-image: url(../images/diagram.svg);
+  background-size: 64px;
 }
 .icon-technologies::before{
-  background-image: url();
+  background-image: url(../images/astronaut.svg);
+  background-size: 64px;
 }
 .text-description {
   line-height: 1.5;
@@ -264,12 +269,14 @@ body {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: 24px; 
 }
 .team-item {
   padding-bottom: 32px;
   text-align: center;
   background-color: var(--light-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-foto {
   margin-bottom: 32px;
@@ -292,9 +299,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* .team-soc-icon{
-  fill: aqua;
-} */
+.team-soc-link:is(:hover,:focus){
+  background-color: var(--active-text-color);
+}
+ .team-soc-icon{
+  fill: var(--soc-icon-color);
+}
 /* ----------------------------Footer */
 .text-item-footer{
   width: 264px;

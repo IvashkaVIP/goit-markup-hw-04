@@ -10,6 +10,7 @@
   --dark-bcg-color: #2e2f42;
   --light-bcg-color: #f4f4fd;
   --soc-icon-color: #f4f4fd;
+  --customers-logo-color: #8e8f99;
 
 }
 h1,
@@ -320,12 +321,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #8E8F99;
+  border: 1px solid var(--customers-logo-color);
   border-radius: 4px;
+  color: var(--customers-logo-color);
 }
-.customers-icon{
-  width: 104px;
-  height: 56px;
+.customers-icon {
+  fill: currentColor;
+}
+.customers-link:is(:hover,:focus){
+  border-color: var(--active-btn-color);
+  color: var(--active-btn-color);
 }
 /* ----------------------------Footer     */
 .text-item-footer{

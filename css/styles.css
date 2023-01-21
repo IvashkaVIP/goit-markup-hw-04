@@ -314,13 +314,18 @@ body {
   width: calc((100% - 5*24px) / 6);
   height: 88px;
 }
-.customers-icon {
+.customers-link {
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #8E8F99;
   border-radius: 4px;
-
+}
+.customers-icon{
+  width: 104px;
+  height: 56px;
 }
 /* ----------------------------Footer     */
 .text-item-footer{

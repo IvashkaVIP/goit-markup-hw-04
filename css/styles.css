@@ -392,7 +392,6 @@ body {
 .filter .btn {
   background-color: var(--light-bcg-color);
   color: var(--active-btn-color);
-px
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }

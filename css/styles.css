@@ -431,11 +431,13 @@ body {
 }
 .portfolio-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
+}
+.portfolio-link {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.portfolio-item:is(:hover, :focus) {
+.portfolio-link:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-link {
-}
+

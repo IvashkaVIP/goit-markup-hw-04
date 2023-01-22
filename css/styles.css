@@ -360,6 +360,7 @@ body {
 .footer-soc-list{
   display: flex;
   justify-content: left;
+  align-items: baseline;
   gap: 16px;
 }
 .footer-soc-item{
